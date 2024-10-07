@@ -6,7 +6,7 @@ export default function Home() {
     <div className={aboutStyle.page}>
 
       <p className={aboutStyle.textgreen}>
-        heloo world
+        h world
       </p>
      
     </div>
