@@ -1,4 +1,3 @@
-import Image from "next/image";
 import aboutStyle from "./page.module.scss";
 
 export default function Home() {
@@ -11,4 +10,4 @@ export default function Home() {
      
     </div>
   );
-}
+};
