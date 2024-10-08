@@ -1,0 +1,26 @@
+// ++++++++++  variables  ++++++++++++
+$primary: #ffd700;
+$secondary: #eee7e7;
+$background: #003333;
+
+
+
+
+
+
+// ********functions**************
+
+ @mixin  button2($pt:15px, $pr:30px){
+    padding:$pt $pr;
+    color:$background;
+    background-color: $secondary;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+
+    :hover{
+        color:#ffff;
+        background-color: black;
+    }
+ }
+ 

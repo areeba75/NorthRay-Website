@@ -1,0 +1,42 @@
+@import '../_variables';
+
+
+.page{
+.welcome{
+  background-color: $background ;
+  color: $primary;
+  font-weight: 800;
+  font-size: 36px;
+  padding: 100px
+}
+}
+.ab{
+margin-top:10px;
+background-color: #162d44 ;
+padding: 100px;
+
+  .welcome2{
+    background-color: #162d44 ;
+    color: $secondary;
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .btn{
+    @include button2(15px, 40px);
+    margin-top: 20px;
+  }
+}
+.product-card {
+  max-width: 300px;
+  margin: 50px auto; /* Centers the card horizontally */
+  border: 2px solid #003333; /* Custom border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
