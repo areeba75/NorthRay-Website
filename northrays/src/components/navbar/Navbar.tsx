@@ -13,6 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
+      <div>
       <div className={styles.logo}>
         <Link href="/">North Rays</Link>
       </div>
@@ -20,6 +21,7 @@ const Navbar = () => {
       {/* Hamburger menu icon for mobile */}
       <div className={styles.hamburger} onClick={toggleMenu}>
         {isOpen ? <RxCross1 /> : <RxHamburgerMenu />} {/* Toggle between hamburger and close icon */}
+      </div>
       </div>
 
       {/* Navigation links */}
@@ -43,6 +45,10 @@ const Navbar = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
+
+      <div className={`${styles.container}`}>
+        <button className={`${styles.navBtn}`}>Let's Talk</button>
+      </div>
     </nav>
   );
 };
