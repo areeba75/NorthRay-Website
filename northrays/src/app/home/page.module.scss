@@ -1,53 +1,36 @@
-@import '../../variables';
+@import "../../variables";
 
+.header1 {
 
-.page{
-.welcome{
-  background-color: $background ;
-  color: $primary;
-  font-weight: 800;
-  font-size: 36px;
-  padding: 100px
-}
-}
-.ab{
-margin-top:10px;
-background-color: #162d44 ;
-padding: 100px;
-
-  .welcome2{
-    background-color: #162d44 ;
-    color: $secondary;
-    font-weight: 800;
-    font-size: 36px;
+  .bvideo {
+    position: absolute;
+    top:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .btn{
-    @include button2(15px, 40px);
-    margin-top: 20px;
-  }
-}
+  .data{
 
-.bvideo{
 
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about{
-  padding-left: 100px;
-  border-radius: 30px;
+    .tagline {
+      // padding-top: 700px;
+      color: white;
+    }
+  
+    .tag {
+      padding-left: 100px;
+      border-radius: 30px;
       text-align: left;
-  margin: auto;
-  color: white;
-  font-weight:200;
-font-size: 38px;
-display: flex;
+      margin: auto;
+      color: white;
+      font-weight: 200;
+      font-size: 38px;
+      display: flex;
+    }
+  }
+  }
 
-}
-.tagline{
-  padding-top: 100px;
-  color: white;
 
-}

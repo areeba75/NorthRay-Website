@@ -8,12 +8,13 @@ const Header = () => {
     <>
       <div>
         {/* Header section */}
-        <header className="product-card-section">
+        <header className={styles.header1}>
           <video className={styles.bvideo} autoPlay loop muted>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <Navbar />
+         <div className={styles.data}>
+         <Navbar />
           <div className={styles.tagline}>
             <marquee
               style={{
@@ -39,13 +40,13 @@ const Header = () => {
               digital age.
             </marquee>
 
-            <div className={styles.about}>
+            <div className={styles.tag}>
               <p>Empowering Businesses in the Digital Age</p>
             </div>
           </div>
+         </div>
         </header>
 
-        {/* About section */}
       </div>
     </>
   );
