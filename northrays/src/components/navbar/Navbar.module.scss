@@ -1,0 +1,92 @@
+@import "../../variables";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    height: 60px;
+    background-image: url("../../public/bg.jpg");
+    background-size: cover;
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+  
+      @media (max-width: 768px) {
+        display: none; // Hide logo on mobile
+      }
+    }
+  
+    .hamburger {
+      display: none; // Hidden by default
+      cursor: pointer;
+      font-size: 2rem;
+      color: #ffffff;
+  
+      @media (max-width: 768px) {
+        display: block; // Show hamburger icon on mobile
+      }
+  
+      &.active {
+        transform: rotate(90deg); // Optional styling when active
+      }
+    }
+  
+    .navLinks {
+      display: flex;
+      list-style: none;
+  
+      li {
+        margin-left: 2rem;
+  
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 1.2rem;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        display: none; // Hide links on mobile by default
+      }
+    }
+  
+    .showMenu {
+      display: block;
+  
+      @media (max-width: 768px) {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #686868;
+        flex-direction: column;
+        padding: 1rem;
+        z-index: 1000;
+        transition: left 0.3s ease;
+  
+        li {
+          margin: 2rem 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .container {
+        .navBtn {
+            @include button2();
+         }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; // Ensure hamburger icon visibility on mobile
+    }
+    
+  }
+  
