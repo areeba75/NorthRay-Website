@@ -40,3 +40,21 @@ padding: 100px;
     transform: translateY(-5px);
   }
 }
+.bvideo{
+
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about{
+  padding: 15px;
+  border-radius: 30px;
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  color: white;
+  font-weight:200;
+font-size: 24px;
+}
